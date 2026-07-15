@@ -1,0 +1,2 @@
+import {Shell,PageHero,LegalCallout} from "../components";import {faqs} from "../data";
+export default function Faq(){return <Shell><PageHero eyebrow="Frequently asked questions" title="What to know before you visit." intro="Straightforward answers about consultations, inspection, timing and responsible handling."/><div className="content faq">{faqs.map(([q,a])=><details key={q}><summary>{q}</summary><p>{a}</p></details>)}<LegalCallout/></div></Shell>}

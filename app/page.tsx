@@ -1,0 +1,19 @@
+import Link from "next/link";
+import { Shell, LegalCallout } from "./components";
+import { categories, projects, services, site } from "./data";
+
+export default function Home() {
+  return <Shell>
+    <section className="hero">
+      <div className="hero-media"><img src="/images/projects/competition-pistol-gold-03.jpg" alt="Custom gold and black competition pistol showcasing Optimus craftsmanship"/></div>
+      <div className="hero-shade"/><div className="hero-copy"><p className="eyebrow">{site.name} · Lipa City</p><h1>Expert.<br/>Dependable.<br/><em>Built around you.</em></h1><p>Precision gunsmithing, competition preparation, restoration and premium customization—guided by inspection, craftsmanship and clear expectations.</p><div className="actions"><Link className="button" href="/request-a-consultation">Request a consultation</Link><Link className="button secondary" href="/our-work">View our work</Link></div></div>
+      <div className="trust-strip">{["Precision craftsmanship","Competition focused","Inspection led","Customized for your goals"].map((x,i)=><div key={x}><span>0{i+1}</span>{x}</div>)}</div>
+    </section>
+    <section className="section intro-grid"><div><p className="eyebrow">Built with purpose</p><h2>Performance begins with a careful inspection.</h2></div><div><p className="large-copy">Every project starts with the customer’s goal, the item’s condition and the requirements that govern the work. The result is a clear, responsible path from consultation to quality review.</p><Link className="text-link" href="/process">See how the process works →</Link></div></section>
+    <section className="section dark-panel"><div className="section-heading"><div><p className="eyebrow">Capabilities</p><h2>Specialist services, clearly organized.</h2></div><Link className="text-link" href="/services">Explore all {services.length} services →</Link></div><div className="category-grid">{categories.map((c,i)=><Link className="category-card" href={`/services#${c.slug}`} key={c.slug}><span>0{i+1}</span><h3>{c.name}</h3><p>{c.intro}</p><b>Explore category →</b></Link>)}</div></section>
+    <section className="section"><div className="section-heading"><div><p className="eyebrow">Selected work</p><h2>Craftsmanship in the details.</h2></div><Link className="text-link" href="/our-work">View the full portfolio →</Link></div><div className="project-grid">{projects.slice(0,3).map((p,i)=><article className={`project-card project-${i}`} key={p.title}><img src={p.image} alt={p.alt}/><div><small>{p.category}</small><h3>{p.title}</h3></div></article>)}</div></section>
+    <section className="section process-band"><p className="eyebrow">A clear path forward</p><h2>Consult. Inspect. Confirm. Craft.</h2><div className="steps">{[["01","Consult","Tell us the goal without sharing sensitive identification or serial details."],["02","Inspect","Staff review condition, compatibility, legal requirements and shop capability."],["03","Confirm","Receive a written scope, estimate and approved handling instructions."],["04","Craft","Authorized work proceeds, followed by inspection and quality review."]].map(s=><div key={s[0]}><span>{s[0]}</span><h3>{s[1]}</h3><p>{s[2]}</p></div>)}</div></section>
+    <section className="section location"><div><p className="eyebrow">Lipa City, Batangas</p><h2>Local craftsmanship. Professional process.</h2><p>{site.address}</p><p>{site.hours}. Contact the shop before visiting.</p></div><div className="cta-card"><h2>Have a project in mind?</h2><p>Start with a privacy-conscious consultation request. Submission does not authorize transport, delivery or work.</p><Link className="button" href="/request-a-consultation">Start your request</Link></div></section>
+    <div className="section"><LegalCallout/></div>
+  </Shell>;
+}

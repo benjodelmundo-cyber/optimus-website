@@ -1,0 +1,1 @@
+import Link from "next/link";import {Shell,PageHero} from "./components";export default function NotFound(){return <Shell><PageHero eyebrow="404" title="This page is off the bench." intro="The page may have moved or no longer exists."/><div className="content"><Link className="button" href="/">Return home</Link></div></Shell>}

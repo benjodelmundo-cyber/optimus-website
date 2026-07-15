@@ -1,0 +1,1 @@
+import type{MetadataRoute}from"next";import{site}from"./data";export default function robots():MetadataRoute.Robots{return process.env.NO_INDEX==="true"?{rules:{userAgent:"*",disallow:"/"}}:{rules:{userAgent:"*",allow:"/",disallow:["/api/"]},sitemap:`${site.url}/sitemap.xml`}}
