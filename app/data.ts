@@ -43,8 +43,8 @@ export const services = categories.flatMap((category) =>
 );
 
 export const projects = [
-  { title: "Competition Build", category: "Competition", image: "/images/projects/competition-firearm-cutout.png", alt: "Isolated black competition firearm with precision-machined chassis and mounted optic" },
-  { title: "Signature Package Build", category: "Personalization", image: "/images/projects/signature-package-detail.jpg", alt: "Detail view of a black and bronze signature package build" },
+  { title: "Competition Build", category: "Competition", image: "/images/projects/competition-build-enhanced.png", alt: "Enhanced close view of a black, silver and red custom competition pistol" },
+  { title: "Signature Package", category: "Personalization", image: "/images/projects/signature-package-detail.jpg", alt: "Detail view of a black and bronze signature package" },
   { title: "Custom Slide Work", category: "", image: "/images/projects/custom-slide-work-02.jpg", alt: "Precision-machined silver and black sporting pistol slide held during inspection" },
   { title: "Custom Finish Study", category: "Customization & Personalization", image: "/images/projects/custom-finish-slide-01.jpg", alt: "Bronze-finished sporting pistol slide in a protective case" },
   { title: "Showpiece Competition Build", category: "Premium Custom Shop", image: "/images/projects/showpiece-pistol-01.jpg", alt: "Black and silver custom sporting pistol displayed on a light background" },
