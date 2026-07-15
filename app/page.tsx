@@ -5,7 +5,7 @@ import { categories, projects, services, site } from "./data";
 export default function Home() {
   return <Shell>
     <section className="hero">
-      <div className="hero-media"><img src="/images/projects/competition-pistol-gold-03.jpg" alt="Custom gold and black competition pistol showcasing Optimus craftsmanship"/></div>
+      <div className="hero-media"><img src="/images/projects/hero-competition-pistol.jpg" alt="Custom black and bronze competition pistol showcasing Optimus craftsmanship"/></div>
       <div className="hero-shade"/><img className="hero-logo" src="/images/optimus-logo-clean.png" alt="" aria-hidden="true"/><div className="hero-copy"><p className="eyebrow">{site.name} · Lipa City</p><h1>Expert.<br/>Dependable.<br/><em>Built around you.</em></h1><p>Precision gunsmithing, competition preparation, restoration and premium customization—guided by inspection, craftsmanship and clear expectations.</p><div className="actions"><Link className="button" href="/request-a-consultation">Request a consultation</Link><Link className="button secondary" href="/our-work">View our work</Link></div></div>
       <div className="trust-strip">{["Precision craftsmanship","Competition focused","Inspection led","Customized for your goals"].map((x,i)=><div key={x}><span>0{i+1}</span>{x}</div>)}</div>
     </section>
