@@ -6,7 +6,7 @@ export function Header() {
 }
 
 export function Footer() {
-  return <footer><div><div className="footer-brand">OPTIMUS</div><p>Precision craftsmanship for lawful sport shooters and firearm enthusiasts.</p></div><div><h3>Visit</h3><p>{site.address}</p><p>{site.hours}</p></div><div><h3>Explore</h3><p><Link href="/services">Services</Link> · <Link href="/our-work">Our work</Link> · <Link href="/faq">FAQ</Link></p><p><Link href="/privacy">Privacy</Link> · <Link href="/terms">Terms</Link> · <Link href="/disclaimer">Disclaimer</Link></p></div><p className="footer-note">© {new Date().getFullYear()} Optimus Defense and Sports Enterprise. All rights reserved.</p></footer>;
+  return <footer><div><div className="footer-identity"><img src="/images/optimus-logo-clean.png" alt="Optimus lion shield"/><div className="footer-brand"><strong>OPTIMUS</strong><span>DEFENSE AND SPORTS ENTERPRISE</span></div></div><p>Precision craftsmanship for lawful sport shooters and firearm enthusiasts.</p></div><div><h3>Visit</h3><p>{site.address}</p><p>{site.hours}</p></div><div><h3>Explore</h3><p><Link href="/services">Services</Link> · <Link href="/our-work">Our work</Link> · <Link href="/faq">FAQ</Link></p><p><Link href="/privacy">Privacy</Link> · <Link href="/terms">Terms</Link> · <Link href="/disclaimer">Disclaimer</Link></p></div><p className="footer-note">© {new Date().getFullYear()} Optimus Defense and Sports Enterprise. All rights reserved.</p></footer>;
 }
 
 export function Shell({ children }: { children: React.ReactNode }) { return <><Header/><main>{children}</main><Footer/></>; }
