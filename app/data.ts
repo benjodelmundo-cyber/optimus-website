@@ -43,9 +43,9 @@ export const services = categories.flatMap((category) =>
 );
 
 export const projects = [
-  { title: "Competition Pistol — Gold Series", category: "Competition & Performance", image: "/images/projects/competition-pistol-gold-03.jpg", alt: "Gold and black competition pistol photographed on a display surface" },
-  { title: "Performance Detail — Gold Series", category: "Customization & Personalization", image: "/images/projects/competition-pistol-gold-02.jpg", alt: "Detail view of gold and black competition pistol craftsmanship" },
-  { title: "Precision Slide Work", category: "Customization & Personalization", image: "/images/projects/precision-slide-work-01.jpg", alt: "Precision-machined sporting pistol slide in a protective case" },
+  { title: "Competition Build", category: "Competition", image: "/images/projects/competition-firearm-cutout.png", alt: "Isolated black competition firearm with precision-machined chassis and mounted optic" },
+  { title: "Performance Detail — Gold Series", category: "Personalization", image: "/images/projects/competition-pistol-gold-02.jpg", alt: "Detail view of gold and black competition pistol craftsmanship" },
+  { title: "Custom Slide Work", category: "", image: "/images/projects/custom-slide-work-02.jpg", alt: "Precision-machined silver and black sporting pistol slide held during inspection" },
   { title: "Custom Finish Study", category: "Customization & Personalization", image: "/images/projects/custom-finish-slide-01.jpg", alt: "Bronze-finished sporting pistol slide in a protective case" },
   { title: "Showpiece Competition Build", category: "Premium Custom Shop", image: "/images/projects/showpiece-pistol-01.jpg", alt: "Black and silver custom sporting pistol displayed on a light background" },
 ];
