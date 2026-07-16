@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { site } from "./data";
+import MobileNav from "./MobileNav";
 
 export function Header() {
-  return <header className="site-header"><Link className="brand" href="/"><img src="/images/optimus-logo-clean.png" alt=""/><span><b>OPTIMUS</b><small>Defense & Sports Enterprise</small></span></Link><nav aria-label="Main navigation"><Link href="/services">Services</Link><Link href="/our-work">Our Work</Link><Link href="/about">About</Link><Link href="/process">Process</Link><Link href="/contact">Contact</Link></nav><Link className="button compact" href="/request-a-consultation">Request consultation</Link></header>;
+  return <header className="site-header"><Link className="brand" href="/"><img src="/images/optimus-logo-clean.png" alt=""/><span><b>OPTIMUS</b><small>Defense & Sports Enterprise</small></span></Link><nav className="desktop-nav" aria-label="Main navigation"><Link href="/services">Services</Link><Link href="/our-work">Our Work</Link><Link href="/about">About</Link><Link href="/process">Process</Link><Link href="/contact">Contact</Link></nav><Link className="button compact header-cta" href="/request-a-consultation">Request consultation</Link><MobileNav/></header>;
 }
 
 export function Footer() {
