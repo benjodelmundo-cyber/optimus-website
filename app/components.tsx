@@ -3,7 +3,7 @@ import { site } from "./data";
 import MobileNav from "./MobileNav";
 
 export function Header() {
-  return <header className="site-header"><Link className="brand" href="/" aria-label="Optimus Defense and Sports Enterprise home"><img className="brand-shield" src="/images/optimus-logo-clean.png" alt=""/><img className="brand-wordmark" src="/images/optimus-official-wordmark-v3.png" alt="Optimus Defense and Sports Enterprise"/></Link><nav className="desktop-nav" aria-label="Main navigation"><Link href="/services">Services</Link><Link href="/our-work">Our Work</Link><Link href="/about">About</Link><Link href="/process">Process</Link><Link href="/contact">Contact</Link></nav><Link className="button compact header-cta" href="/request-a-consultation">Request consultation</Link><MobileNav/></header>;
+  return <header className="site-header"><Link className="brand" href="/" aria-label="Optimus Defense and Sports Enterprise home"><img className="brand-shield" src="/images/optimus-logo-hero-tight.png" alt=""/><img className="brand-wordmark" src="/images/optimus-official-wordmark-v3.png" alt="Optimus Defense and Sports Enterprise"/></Link><nav className="desktop-nav" aria-label="Main navigation"><Link href="/services">Services</Link><Link href="/our-work">Our Work</Link><Link href="/about">About</Link><Link href="/process">Process</Link><Link href="/contact">Contact</Link></nav><Link className="button compact header-cta" href="/request-a-consultation">Request consultation</Link><MobileNav/></header>;
 }
 
 export function Footer() {
