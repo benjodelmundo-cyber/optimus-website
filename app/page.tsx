@@ -2,6 +2,9 @@ import Link from "next/link";
 import { Shell, LegalCallout } from "./components";
 import { categories, projects, services, site } from "./data";
 
+// Keep the public homepage fresh across Hostinger CDN edges after each deployment.
+export const dynamic = "force-dynamic";
+
 export default function Home() {
   return <Shell>
     <section className="hero">
